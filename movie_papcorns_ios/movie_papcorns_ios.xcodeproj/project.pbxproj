@@ -11,6 +11,14 @@
 		2935A0422AE1E13200DDA81A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2935A0412AE1E13200DDA81A /* Assets.xcassets */; };
 		2935A0452AE1E13200DDA81A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2935A0432AE1E13200DDA81A /* LaunchScreen.storyboard */; };
 		2935A0532AE1E2B400DDA81A /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2935A0522AE1E2B400DDA81A /* ImageManager.swift */; };
+		2935A0552AE1E50400DDA81A /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2935A0542AE1E50400DDA81A /* BaseViewController.swift */; };
+		2935A0582AE1E51E00DDA81A /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2935A0572AE1E51E00DDA81A /* TabbarController.swift */; };
+		2935A05A2AE1E55800DDA81A /* TabBarItemType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2935A0592AE1E55800DDA81A /* TabBarItemType.swift */; };
+		2935A05F2AE1E58D00DDA81A /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2935A05D2AE1E58D00DDA81A /* FavoritesViewController.swift */; };
+		2935A0602AE1E58D00DDA81A /* FavoritesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2935A05E2AE1E58D00DDA81A /* FavoritesViewController.xib */; };
+		2935A0632AE1E59800DDA81A /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2935A0612AE1E59800DDA81A /* DiscoverViewController.swift */; };
+		2935A0642AE1E59800DDA81A /* DiscoverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2935A0622AE1E59800DDA81A /* DiscoverViewController.xib */; };
+		2935A0672AE1E72600DDA81A /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2935A0662AE1E72600DDA81A /* UIColor+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +28,14 @@
 		2935A0442AE1E13200DDA81A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2935A0462AE1E13200DDA81A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2935A0522AE1E2B400DDA81A /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
+		2935A0542AE1E50400DDA81A /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		2935A0572AE1E51E00DDA81A /* TabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
+		2935A0592AE1E55800DDA81A /* TabBarItemType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItemType.swift; sourceTree = "<group>"; };
+		2935A05D2AE1E58D00DDA81A /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		2935A05E2AE1E58D00DDA81A /* FavoritesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritesViewController.xib; sourceTree = "<group>"; };
+		2935A0612AE1E59800DDA81A /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
+		2935A0622AE1E59800DDA81A /* DiscoverViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiscoverViewController.xib; sourceTree = "<group>"; };
+		2935A0662AE1E72600DDA81A /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,12 +68,13 @@
 		2935A0372AE1E13200DDA81A /* movie_papcorns_ios */ = {
 			isa = PBXGroup;
 			children = (
+				2935A0652AE1E71C00DDA81A /* Extensions */,
 				2935A0462AE1E13200DDA81A /* Info.plist */,
 				2935A0502AE1E15C00DDA81A /* APP */,
-				2935A04F2AE1E15400DDA81A /* UI Components */,
 				2935A04E2AE1E14E00DDA81A /* Managers */,
-				2935A04D2AE1E14A00DDA81A /* Screens */,
 				2935A04C2AE1E14400DDA81A /* Resources */,
+				2935A04D2AE1E14A00DDA81A /* Screens */,
+				2935A04F2AE1E15400DDA81A /* UI Components */,
 			);
 			path = movie_papcorns_ios;
 			sourceTree = "<group>";
@@ -73,7 +90,11 @@
 		2935A04D2AE1E14A00DDA81A /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				2935A05C2AE1E56B00DDA81A /* Favorites */,
+				2935A05B2AE1E56700DDA81A /* Discover */,
+				2935A0562AE1E51500DDA81A /* Tabbar */,
 				2935A0512AE1E16800DDA81A /* Splash */,
+				2935A0542AE1E50400DDA81A /* BaseViewController.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -107,6 +128,41 @@
 				2935A0432AE1E13200DDA81A /* LaunchScreen.storyboard */,
 			);
 			path = Splash;
+			sourceTree = "<group>";
+		};
+		2935A0562AE1E51500DDA81A /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				2935A0572AE1E51E00DDA81A /* TabbarController.swift */,
+				2935A0592AE1E55800DDA81A /* TabBarItemType.swift */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		2935A05B2AE1E56700DDA81A /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				2935A0612AE1E59800DDA81A /* DiscoverViewController.swift */,
+				2935A0622AE1E59800DDA81A /* DiscoverViewController.xib */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		2935A05C2AE1E56B00DDA81A /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				2935A05D2AE1E58D00DDA81A /* FavoritesViewController.swift */,
+				2935A05E2AE1E58D00DDA81A /* FavoritesViewController.xib */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		2935A0652AE1E71C00DDA81A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2935A0662AE1E72600DDA81A /* UIColor+Ext.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +224,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2935A0452AE1E13200DDA81A /* LaunchScreen.storyboard in Resources */,
+				2935A0642AE1E59800DDA81A /* DiscoverViewController.xib in Resources */,
+				2935A0602AE1E58D00DDA81A /* FavoritesViewController.xib in Resources */,
 				2935A0422AE1E13200DDA81A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -180,7 +238,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				2935A0392AE1E13200DDA81A /* AppDelegate.swift in Sources */,
+				2935A05A2AE1E55800DDA81A /* TabBarItemType.swift in Sources */,
+				2935A0632AE1E59800DDA81A /* DiscoverViewController.swift in Sources */,
+				2935A0582AE1E51E00DDA81A /* TabbarController.swift in Sources */,
 				2935A0532AE1E2B400DDA81A /* ImageManager.swift in Sources */,
+				2935A0672AE1E72600DDA81A /* UIColor+Ext.swift in Sources */,
+				2935A05F2AE1E58D00DDA81A /* FavoritesViewController.swift in Sources */,
+				2935A0552AE1E50400DDA81A /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
