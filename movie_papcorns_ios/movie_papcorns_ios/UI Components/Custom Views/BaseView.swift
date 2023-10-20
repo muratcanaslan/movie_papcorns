@@ -13,10 +13,14 @@ class BaseView: UIView, NibOwnerLoadable {
     override init(frame: CGRect) {
         super.init(frame: frame)
         loadNibContent()
+        setupAfterInit()
     }
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         loadNibContent()
+        setupAfterInit()
     }
+    
+    func setupAfterInit() { }
 }

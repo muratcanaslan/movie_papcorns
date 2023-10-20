@@ -33,7 +33,7 @@ final class FirebaseManager {
             } else {
                 for document in snapshot!.documents {
                     let title = document.get("title") as! String
-                    let type = document.get("order") as! Int
+                    let type = document.get("type") as! Int
                     let id = document.get("id") as! Int
                     let order = document.get("order") as! Int
                     
@@ -58,7 +58,6 @@ final class FirebaseManager {
                     let contentName = document.get("contentName") as! String
                     let contentId = document.get("contentId") as! Int
                     let categoryId = document.get("categoryId") as! Int
-                    
                     contents.append(.init(categoryId: categoryId, contentId: contentId, contentName: contentName, imageUrl: imageUrl))
                 }
                 

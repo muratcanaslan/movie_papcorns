@@ -28,12 +28,13 @@ final class MoviesManager {
     }
     
     func getBigImages() -> [CategoryViewModel] {
-        let bigImages = categories.filter({ $0.type == 1}).sorted(by: { $0.order > $1.order})
+        let bigImages = categories.filter({ $0.type == 1}).sorted(by: { $0.order < $1.order})
         return bigImages
     }
     
     func getSmallImages() -> [CategoryViewModel] {
-        let smallImages = categories.filter({ $0.type == 0}).sorted(by: { $0.order > $1.order})
+        print(categories)
+        let smallImages = categories.filter({ $0.type == 0}).sorted(by: { $0.order < $1.order})
         return smallImages
     }
     

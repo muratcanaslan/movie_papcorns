@@ -20,7 +20,7 @@ class CategoryViewModel {
     let title: String
     let type: Int
     
-    let movies: [ContentViewModel]
+    var movies: [ContentViewModel] = []
     
     init(model: Category, movies: [ContentViewModel]) {
         self.id = model.id
@@ -28,7 +28,11 @@ class CategoryViewModel {
         self.title = model.title
         self.type = model.type
         
-        self.movies = movies
+        for movie in movies {
+            if movie.categoryId == id {
+                self.movies.append(movie)
+            }
+        }
     }
 }
 

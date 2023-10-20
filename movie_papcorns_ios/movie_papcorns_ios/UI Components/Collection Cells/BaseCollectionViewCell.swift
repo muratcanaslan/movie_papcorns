@@ -8,4 +8,13 @@
 import UIKit
 import Reusable
 
-class BaseCollectionViewCell: UICollectionViewCell, NibReusable { }
+class BaseCollectionViewCell: UICollectionViewCell, NibReusable {
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
+        setupAfterInit()
+    }
+    
+    func setupAfterInit() { }
+}

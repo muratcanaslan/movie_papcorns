@@ -36,6 +36,13 @@
 		2935A0942AE28B5500DDA81A /* BigImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2935A0932AE28B5500DDA81A /* BigImageView.xib */; };
 		2935A0962AE28B6600DDA81A /* BigImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2935A0952AE28B6600DDA81A /* BigImageView.swift */; };
 		2935A0982AE28C6200DDA81A /* MoviesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2935A0972AE28C6200DDA81A /* MoviesManager.swift */; };
+		2935A09B2AE2A87800DDA81A /* BigImageCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2935A0992AE2A87800DDA81A /* BigImageCollectionCell.swift */; };
+		2935A09C2AE2A87800DDA81A /* BigImageCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2935A09A2AE2A87800DDA81A /* BigImageCollectionCell.xib */; };
+		2935A09E2AE2A8D500DDA81A /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2935A09D2AE2A8D500DDA81A /* UIView+Ext.swift */; };
+		2935A0A12AE2B0D000DDA81A /* SmallImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2935A09F2AE2B0D000DDA81A /* SmallImageCollectionViewCell.swift */; };
+		2935A0A22AE2B0D000DDA81A /* SmallImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2935A0A02AE2B0D000DDA81A /* SmallImageCollectionViewCell.xib */; };
+		2935A0A42AE2B12300DDA81A /* SmallImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2935A0A32AE2B12300DDA81A /* SmallImageView.xib */; };
+		2935A0A62AE2B13F00DDA81A /* SmallImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2935A0A52AE2B13F00DDA81A /* SmallImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +73,13 @@
 		2935A0932AE28B5500DDA81A /* BigImageView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BigImageView.xib; sourceTree = "<group>"; };
 		2935A0952AE28B6600DDA81A /* BigImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigImageView.swift; sourceTree = "<group>"; };
 		2935A0972AE28C6200DDA81A /* MoviesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesManager.swift; sourceTree = "<group>"; };
+		2935A0992AE2A87800DDA81A /* BigImageCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigImageCollectionCell.swift; sourceTree = "<group>"; };
+		2935A09A2AE2A87800DDA81A /* BigImageCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BigImageCollectionCell.xib; sourceTree = "<group>"; };
+		2935A09D2AE2A8D500DDA81A /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		2935A09F2AE2B0D000DDA81A /* SmallImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		2935A0A02AE2B0D000DDA81A /* SmallImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SmallImageCollectionViewCell.xib; sourceTree = "<group>"; };
+		2935A0A32AE2B12300DDA81A /* SmallImageView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SmallImageView.xib; sourceTree = "<group>"; };
+		2935A0A52AE2B13F00DDA81A /* SmallImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +219,7 @@
 			children = (
 				2935A0662AE1E72600DDA81A /* UIColor+Ext.swift */,
 				2935A08C2AE289BB00DDA81A /* UIImageView+Ext.swift */,
+				2935A09D2AE2A8D500DDA81A /* UIView+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -249,6 +264,8 @@
 		2935A0802AE2885700DDA81A /* BigImageCollectionCell */ = {
 			isa = PBXGroup;
 			children = (
+				2935A0992AE2A87800DDA81A /* BigImageCollectionCell.swift */,
+				2935A09A2AE2A87800DDA81A /* BigImageCollectionCell.xib */,
 			);
 			path = BigImageCollectionCell;
 			sourceTree = "<group>";
@@ -256,6 +273,8 @@
 		2935A0812AE288D700DDA81A /* SmallImageCollectionCell */ = {
 			isa = PBXGroup;
 			children = (
+				2935A09F2AE2B0D000DDA81A /* SmallImageCollectionViewCell.swift */,
+				2935A0A02AE2B0D000DDA81A /* SmallImageCollectionViewCell.xib */,
 			);
 			path = SmallImageCollectionCell;
 			sourceTree = "<group>";
@@ -272,6 +291,8 @@
 		2935A0922AE28B4500DDA81A /* SmallImageView */ = {
 			isa = PBXGroup;
 			children = (
+				2935A0A32AE2B12300DDA81A /* SmallImageView.xib */,
+				2935A0A52AE2B13F00DDA81A /* SmallImageView.swift */,
 			);
 			path = SmallImageView;
 			sourceTree = "<group>";
@@ -345,9 +366,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2935A0A22AE2B0D000DDA81A /* SmallImageCollectionViewCell.xib in Resources */,
 				2935A0452AE1E13200DDA81A /* LaunchScreen.storyboard in Resources */,
 				2935A0642AE1E59800DDA81A /* DiscoverViewController.xib in Resources */,
+				2935A09C2AE2A87800DDA81A /* BigImageCollectionCell.xib in Resources */,
 				2935A0692AE1F43C00DDA81A /* GoogleService-Info.plist in Resources */,
+				2935A0A42AE2B12300DDA81A /* SmallImageView.xib in Resources */,
 				2935A0942AE28B5500DDA81A /* BigImageView.xib in Resources */,
 				2935A0602AE1E58D00DDA81A /* FavoritesViewController.xib in Resources */,
 				2935A0422AE1E13200DDA81A /* Assets.xcassets in Resources */,
@@ -367,10 +391,14 @@
 				2935A0632AE1E59800DDA81A /* DiscoverViewController.swift in Sources */,
 				2935A0732AE1F98300DDA81A /* Content.swift in Sources */,
 				2935A0702AE1F4D800DDA81A /* FirebaseManager.swift in Sources */,
+				2935A0A62AE2B13F00DDA81A /* SmallImageView.swift in Sources */,
 				2935A0892AE2894F00DDA81A /* BaseCollectionViewCell.swift in Sources */,
 				2935A0582AE1E51E00DDA81A /* TabbarController.swift in Sources */,
+				2935A0A12AE2B0D000DDA81A /* SmallImageCollectionViewCell.swift in Sources */,
+				2935A09B2AE2A87800DDA81A /* BigImageCollectionCell.swift in Sources */,
 				2935A0532AE1E2B400DDA81A /* ImageManager.swift in Sources */,
 				2935A08D2AE289BB00DDA81A /* UIImageView+Ext.swift in Sources */,
+				2935A09E2AE2A8D500DDA81A /* UIView+Ext.swift in Sources */,
 				2935A0672AE1E72600DDA81A /* UIColor+Ext.swift in Sources */,
 				2935A05F2AE1E58D00DDA81A /* FavoritesViewController.swift in Sources */,
 				2935A0962AE28B6600DDA81A /* BigImageView.swift in Sources */,

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SmallImageView" customModule="movie_papcorns_ios" customModuleProvider="target">
+            <connections>
+                <outlet property="categoryTitle" destination="TNZ-EY-ozB" id="riO-7W-jEp"/>
+                <outlet property="collectionView" destination="Qz5-ar-ycv" id="SmZ-fA-CMJ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="483" height="248"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ASDASDASD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TNZ-EY-ozB">
+                    <rect key="frame" x="16" y="0.0" width="451" height="36"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Qz5-ar-ycv">
+                    <rect key="frame" x="16" y="48" width="467" height="200"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="9qM-aX-j1X"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="RZl-1L-pxY">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="TNZ-EY-ozB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="7Yy-eH-oOa"/>
+                <constraint firstItem="Qz5-ar-ycv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="PVx-X0-k46"/>
+                <constraint firstAttribute="trailing" secondItem="TNZ-EY-ozB" secondAttribute="trailing" constant="16" id="SMK-3w-Yhn"/>
+                <constraint firstItem="Qz5-ar-ycv" firstAttribute="top" secondItem="TNZ-EY-ozB" secondAttribute="bottom" constant="12" id="bX9-Zn-DYR"/>
+                <constraint firstAttribute="bottom" secondItem="Qz5-ar-ycv" secondAttribute="bottom" id="h0S-0y-lfW"/>
+                <constraint firstAttribute="trailing" secondItem="Qz5-ar-ycv" secondAttribute="trailing" id="iZo-vW-cq1"/>
+                <constraint firstItem="TNZ-EY-ozB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="wFM-gK-YZc"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-34.351145038167935" y="-192.95774647887325"/>
+        </view>
+    </objects>
+</document>

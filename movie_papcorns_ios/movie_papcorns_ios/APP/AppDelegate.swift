@@ -31,16 +31,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     private func setNavigationBar() {
-        let titleStyle: [NSAttributedString.Key: Any] = [
+        let largeTitleStyle: [NSAttributedString.Key: Any] = [
             .foregroundColor: UIColor.white,
             .font: UIFont.systemFont(ofSize: 34, weight: .bold)
+        ]
+        
+        let titleStyle: [NSAttributedString.Key: Any] = [
+            .foregroundColor: UIColor.white,
+            .font: UIFont.systemFont(ofSize: 22, weight: .bold)
         ]
         
         let navAppearance = UINavigationBar.appearance()
         let appearance = UINavigationBarAppearance()
         
         appearance.backgroundColor = UIColor.black
-        appearance.largeTitleTextAttributes = titleStyle
+        appearance.largeTitleTextAttributes = largeTitleStyle
+        appearance.titleTextAttributes = titleStyle
         appearance.setBackIndicatorImage(I.iconBack, transitionMaskImage: I.iconBack)
         appearance.shadowColor = .clear
         

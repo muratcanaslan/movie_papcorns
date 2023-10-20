@@ -1,5 +1,5 @@
 //
-//  BigImageView.swift
+//  SmallImageView.swift
 //  movie_papcorns_ios
 //
 //  Created by Murat Can ASLAN on 20.10.2023.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class BigImageView: BaseView {
+final class SmallImageView: BaseView {
 
     //MARK: - IBOutlets
     @IBOutlet private weak var categoryTitle: UILabel!
@@ -15,7 +15,7 @@ final class BigImageView: BaseView {
     
     //MARK: - Blocks
     var didTapMovie: ((ContentViewModel?) -> Void)?
-
+    
     //MARK: - Properties
     var model: CategoryViewModel? {
         didSet {
@@ -42,7 +42,7 @@ final class BigImageView: BaseView {
 }
 
 //MARK: - UICollectionView DataSource
-extension BigImageView: UICollectionViewDataSource {
+extension SmallImageView: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         guard let movies = model?.movies else { return 0 }
         return movies.count
@@ -57,7 +57,7 @@ extension BigImageView: UICollectionViewDataSource {
 }
 
 //MARK: - UICollectionView Delegate
-extension BigImageView: UICollectionViewDelegate {
+extension SmallImageView: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let movie = model?.movies[indexPath.item]
         self.didTapMovie?(movie)
@@ -65,24 +65,25 @@ extension BigImageView: UICollectionViewDelegate {
 }
 
 //MARK: - UICollectionView DelegateFlowLayout
-extension BigImageView: UICollectionViewDelegateFlowLayout {
+extension SmallImageView: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width: CGFloat = (collectionView.frame.size.width - 16) / 2.5
-        let height: CGFloat = 296
+        let width: CGFloat = (collectionView.frame.size.width - 16) / 4.5
+        let height: CGFloat = 200
         return CGSize(width: width, height: height)
     }
 
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        2
+        4
     }
 
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        2
+        4
     }
 }
+
