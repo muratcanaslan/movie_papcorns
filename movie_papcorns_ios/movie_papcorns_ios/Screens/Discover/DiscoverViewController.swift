@@ -9,9 +9,14 @@ import UIKit
 
 final class DiscoverViewController: BaseViewController {
 
+    let firebase = FirebaseManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         navigationItem.title = "Discover"
+        firebase.signInAnonymously { [weak self] success in
+            self?.firebase.fetchContent()
+        }
     }
 }
