@@ -15,8 +15,5 @@ final class DiscoverViewController: BaseViewController {
         super.viewDidLoad()
 
         navigationItem.title = "Discover"
-        firebase.signInAnonymously { [weak self] success in
-            self?.firebase.fetchContent()
-        }
     }
 }

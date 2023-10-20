@@ -28,6 +28,11 @@
 		2935A0772AE1FA1100DDA81A /* DiscoverViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2935A0762AE1FA1100DDA81A /* DiscoverViewModel.swift */; };
 		2935A0792AE1FA1B00DDA81A /* FavoritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2935A0782AE1FA1B00DDA81A /* FavoritesViewModel.swift */; };
 		2935A07C2AE2866900DDA81A /* UserDefaultWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2935A07B2AE2866900DDA81A /* UserDefaultWrapper.swift */; };
+		2935A0842AE2892D00DDA81A /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 2935A0832AE2892D00DDA81A /* Kingfisher */; };
+		2935A0872AE2893C00DDA81A /* Reusable in Frameworks */ = {isa = PBXBuildFile; productRef = 2935A0862AE2893C00DDA81A /* Reusable */; };
+		2935A0892AE2894F00DDA81A /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2935A0882AE2894F00DDA81A /* BaseCollectionViewCell.swift */; };
+		2935A08B2AE289A100DDA81A /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2935A08A2AE289A100DDA81A /* BaseTableViewCell.swift */; };
+		2935A08D2AE289BB00DDA81A /* UIImageView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2935A08C2AE289BB00DDA81A /* UIImageView+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +57,9 @@
 		2935A0762AE1FA1100DDA81A /* DiscoverViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewModel.swift; sourceTree = "<group>"; };
 		2935A0782AE1FA1B00DDA81A /* FavoritesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewModel.swift; sourceTree = "<group>"; };
 		2935A07B2AE2866900DDA81A /* UserDefaultWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultWrapper.swift; sourceTree = "<group>"; };
+		2935A0882AE2894F00DDA81A /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
+		2935A08A2AE289A100DDA81A /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
+		2935A08C2AE289BB00DDA81A /* UIImageView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,8 +67,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2935A0842AE2892D00DDA81A /* Kingfisher in Frameworks */,
 				2935A06C2AE1F4BD00DDA81A /* FirebaseAuth in Frameworks */,
 				2935A06E2AE1F4BD00DDA81A /* FirebaseFirestore in Frameworks */,
+				2935A0872AE2893C00DDA81A /* Reusable in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +142,9 @@
 		2935A04F2AE1E15400DDA81A /* UI Components */ = {
 			isa = PBXGroup;
 			children = (
+				2935A07F2AE2884600DDA81A /* Custom Views */,
+				2935A07E2AE2884100DDA81A /* TableCells */,
+				2935A07D2AE2883B00DDA81A /* Collection Cells */,
 			);
 			path = "UI Components";
 			sourceTree = "<group>";
@@ -185,6 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				2935A0662AE1E72600DDA81A /* UIColor+Ext.swift */,
+				2935A08C2AE289BB00DDA81A /* UIImageView+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -206,6 +220,45 @@
 			path = "Property Wrappers";
 			sourceTree = "<group>";
 		};
+		2935A07D2AE2883B00DDA81A /* Collection Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2935A0882AE2894F00DDA81A /* BaseCollectionViewCell.swift */,
+				2935A0812AE288D700DDA81A /* SmallImageCollectionCell */,
+				2935A0802AE2885700DDA81A /* BigImageCollectionCell */,
+			);
+			path = "Collection Cells";
+			sourceTree = "<group>";
+		};
+		2935A07E2AE2884100DDA81A /* TableCells */ = {
+			isa = PBXGroup;
+			children = (
+				2935A08A2AE289A100DDA81A /* BaseTableViewCell.swift */,
+			);
+			path = TableCells;
+			sourceTree = "<group>";
+		};
+		2935A07F2AE2884600DDA81A /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		2935A0802AE2885700DDA81A /* BigImageCollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BigImageCollectionCell;
+			sourceTree = "<group>";
+		};
+		2935A0812AE288D700DDA81A /* SmallImageCollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SmallImageCollectionCell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -225,6 +278,8 @@
 			packageProductDependencies = (
 				2935A06B2AE1F4BD00DDA81A /* FirebaseAuth */,
 				2935A06D2AE1F4BD00DDA81A /* FirebaseFirestore */,
+				2935A0832AE2892D00DDA81A /* Kingfisher */,
+				2935A0862AE2893C00DDA81A /* Reusable */,
 			);
 			productName = movie_papcorns_ios;
 			productReference = 2935A0352AE1E13200DDA81A /* movie_papcorns_ios.app */;
@@ -256,6 +311,8 @@
 			mainGroup = 2935A02C2AE1E13200DDA81A;
 			packageReferences = (
 				2935A06A2AE1F4BD00DDA81A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				2935A0822AE2892D00DDA81A /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				2935A0852AE2893C00DDA81A /* XCRemoteSwiftPackageReference "Reusable" */,
 			);
 			productRefGroup = 2935A0362AE1E13200DDA81A /* Products */;
 			projectDirPath = "";
@@ -286,13 +343,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2935A08B2AE289A100DDA81A /* BaseTableViewCell.swift in Sources */,
 				2935A0392AE1E13200DDA81A /* AppDelegate.swift in Sources */,
 				2935A05A2AE1E55800DDA81A /* TabBarItemType.swift in Sources */,
 				2935A0632AE1E59800DDA81A /* DiscoverViewController.swift in Sources */,
 				2935A0732AE1F98300DDA81A /* Content.swift in Sources */,
 				2935A0702AE1F4D800DDA81A /* FirebaseManager.swift in Sources */,
+				2935A0892AE2894F00DDA81A /* BaseCollectionViewCell.swift in Sources */,
 				2935A0582AE1E51E00DDA81A /* TabbarController.swift in Sources */,
 				2935A0532AE1E2B400DDA81A /* ImageManager.swift in Sources */,
+				2935A08D2AE289BB00DDA81A /* UIImageView+Ext.swift in Sources */,
 				2935A0672AE1E72600DDA81A /* UIColor+Ext.swift in Sources */,
 				2935A05F2AE1E58D00DDA81A /* FavoritesViewController.swift in Sources */,
 				2935A0772AE1FA1100DDA81A /* DiscoverViewModel.swift in Sources */,
@@ -525,6 +585,22 @@
 				minimumVersion = 10.0.0;
 			};
 		};
+		2935A0822AE2892D00DDA81A /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		2935A0852AE2893C00DDA81A /* XCRemoteSwiftPackageReference "Reusable" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AliSoftware/Reusable";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -537,6 +613,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 2935A06A2AE1F4BD00DDA81A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestore;
+		};
+		2935A0832AE2892D00DDA81A /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2935A0822AE2892D00DDA81A /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		2935A0862AE2893C00DDA81A /* Reusable */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2935A0852AE2893C00DDA81A /* XCRemoteSwiftPackageReference "Reusable" */;
+			productName = Reusable;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
