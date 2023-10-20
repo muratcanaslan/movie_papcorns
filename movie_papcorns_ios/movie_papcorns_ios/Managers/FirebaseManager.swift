@@ -40,7 +40,7 @@ final class FirebaseManager {
                     categories.append(.init(id: id, order: order, title: title, type: type))
                 }
                 
-                print(categories)
+                completion(categories)
             }
         }
         
@@ -61,6 +61,8 @@ final class FirebaseManager {
                     
                     contents.append(.init(categoryId: categoryId, contentId: contentId, contentName: contentName, imageUrl: imageUrl))
                 }
+                
+                completion(contents)
             }
         }
     }
