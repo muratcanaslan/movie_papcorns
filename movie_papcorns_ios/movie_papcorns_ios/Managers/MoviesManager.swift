@@ -42,13 +42,27 @@ final class MoviesManager {
         return favoriteMovies
     }
     
-    func addFavorite(model: ContentViewModel) {
+    func isFavorite(with movie: ContentViewModel) -> Bool {
+        print(favoriteMovies)
+        print(favoriteMovies.contains(movie))
+        return favoriteMovies.contains(movie)
+    }
+    
+    func didTapFavorite(with model: ContentViewModel) {
+        isFavorite(with: model) ? removeFavorite(model: model) : addFavorite(model: model)
+    }
+    
+    private func addFavorite(model: ContentViewModel) {
         self.favoriteMovies.append(model)
     }
     
-    func removeFavorite(model: ContentViewModel) {
+    private func removeFavorite(model: ContentViewModel) {
         guard let index = favoriteMovies.firstIndex(where: { $0 == model}) else { return }
         favoriteMovies.remove(at: index)
+    }
+    
+    func removeAllFavorites() {
+        favoriteMovies = []
     }
 }
  

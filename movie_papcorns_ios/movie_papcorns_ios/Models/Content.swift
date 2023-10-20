@@ -15,22 +15,20 @@ struct Content: Codable {
     
 }
 
-class ContentViewModel: Codable, Equatable {
+class ContentViewModel: Codable, Equatable  {
     let categoryId: Int
     let contentId: Int
     let contentName: String
     let imageUrl: URL?
-    var isFavorite: Bool
     
     init(model: Content) {
         self.categoryId = model.categoryId
         self.contentId = model.contentId
         self.contentName = model.contentName
         self.imageUrl = URL(string: model.imageUrl)
-        self.isFavorite = false
     }
     
     static func == (lhs: ContentViewModel, rhs: ContentViewModel) -> Bool {
-        return lhs.categoryId == rhs.categoryId
+        return lhs.contentId == rhs.contentId && lhs.contentName == rhs.contentName
     }
 }

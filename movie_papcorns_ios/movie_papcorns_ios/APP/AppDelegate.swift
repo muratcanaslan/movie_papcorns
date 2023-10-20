@@ -20,7 +20,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FirebaseManager.start()
         
         startApp()
-        
         return true
     }
     

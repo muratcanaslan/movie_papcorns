@@ -31,6 +31,13 @@ final class DiscoverViewController: BaseViewController {
         navigationItem.title = "Discover"
         scrollView.contentInset = .init(top: 32, left: 0, bottom: 72, right: 0)
     }
+    
+    private func navigationDetail(movie: ContentViewModel) {
+        let vc = MovieDetailViewController(movie: movie)
+        vc.navigationController?.navigationBar.prefersLargeTitles = false
+        vc.navigationItem.largeTitleDisplayMode = .never
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }
 
 //MARK: - DiscoverViewModel Delegate
@@ -39,6 +46,9 @@ extension DiscoverViewController: DiscoverViewModelDelegate {
         for category in viewModel.moviesManager.getBigImages() {
             let bigView = BigImageView()
             bigView.model = category
+            bigView.didTapMovie = { [weak self] movie in
+                self?.navigationDetail(movie: movie!)
+            }
             DispatchQueue.main.async {
                 self.stackView.addArrangedSubview(bigView)
             }
@@ -47,6 +57,9 @@ extension DiscoverViewController: DiscoverViewModelDelegate {
         for category in viewModel.moviesManager.getSmallImages() {
             let smallView = SmallImageView()
             smallView.model = category
+            smallView.didTapMovie = { [weak self] movie in
+                self?.navigationDetail(movie: movie!)
+            }
             
             DispatchQueue.main.async {
                 self.stackView.addArrangedSubview(smallView)
