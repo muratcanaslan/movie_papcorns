@@ -31,8 +31,11 @@
 		2935A0842AE2892D00DDA81A /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 2935A0832AE2892D00DDA81A /* Kingfisher */; };
 		2935A0872AE2893C00DDA81A /* Reusable in Frameworks */ = {isa = PBXBuildFile; productRef = 2935A0862AE2893C00DDA81A /* Reusable */; };
 		2935A0892AE2894F00DDA81A /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2935A0882AE2894F00DDA81A /* BaseCollectionViewCell.swift */; };
-		2935A08B2AE289A100DDA81A /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2935A08A2AE289A100DDA81A /* BaseTableViewCell.swift */; };
 		2935A08D2AE289BB00DDA81A /* UIImageView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2935A08C2AE289BB00DDA81A /* UIImageView+Ext.swift */; };
+		2935A0902AE28AF100DDA81A /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2935A08F2AE28AF100DDA81A /* BaseView.swift */; };
+		2935A0942AE28B5500DDA81A /* BigImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2935A0932AE28B5500DDA81A /* BigImageView.xib */; };
+		2935A0962AE28B6600DDA81A /* BigImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2935A0952AE28B6600DDA81A /* BigImageView.swift */; };
+		2935A0982AE28C6200DDA81A /* MoviesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2935A0972AE28C6200DDA81A /* MoviesManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,8 +61,11 @@
 		2935A0782AE1FA1B00DDA81A /* FavoritesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewModel.swift; sourceTree = "<group>"; };
 		2935A07B2AE2866900DDA81A /* UserDefaultWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultWrapper.swift; sourceTree = "<group>"; };
 		2935A0882AE2894F00DDA81A /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
-		2935A08A2AE289A100DDA81A /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
 		2935A08C2AE289BB00DDA81A /* UIImageView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Ext.swift"; sourceTree = "<group>"; };
+		2935A08F2AE28AF100DDA81A /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		2935A0932AE28B5500DDA81A /* BigImageView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BigImageView.xib; sourceTree = "<group>"; };
+		2935A0952AE28B6600DDA81A /* BigImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigImageView.swift; sourceTree = "<group>"; };
+		2935A0972AE28C6200DDA81A /* MoviesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +141,7 @@
 			children = (
 				2935A0522AE1E2B400DDA81A /* ImageManager.swift */,
 				2935A06F2AE1F4D800DDA81A /* FirebaseManager.swift */,
+				2935A0972AE28C6200DDA81A /* MoviesManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -143,7 +150,6 @@
 			isa = PBXGroup;
 			children = (
 				2935A07F2AE2884600DDA81A /* Custom Views */,
-				2935A07E2AE2884100DDA81A /* TableCells */,
 				2935A07D2AE2883B00DDA81A /* Collection Cells */,
 			);
 			path = "UI Components";
@@ -230,17 +236,12 @@
 			path = "Collection Cells";
 			sourceTree = "<group>";
 		};
-		2935A07E2AE2884100DDA81A /* TableCells */ = {
-			isa = PBXGroup;
-			children = (
-				2935A08A2AE289A100DDA81A /* BaseTableViewCell.swift */,
-			);
-			path = TableCells;
-			sourceTree = "<group>";
-		};
 		2935A07F2AE2884600DDA81A /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				2935A08F2AE28AF100DDA81A /* BaseView.swift */,
+				2935A0912AE28B3600DDA81A /* BıgImageView */,
+				2935A0922AE28B4500DDA81A /* SmallImageView */,
 			);
 			path = "Custom Views";
 			sourceTree = "<group>";
@@ -257,6 +258,22 @@
 			children = (
 			);
 			path = SmallImageCollectionCell;
+			sourceTree = "<group>";
+		};
+		2935A0912AE28B3600DDA81A /* BıgImageView */ = {
+			isa = PBXGroup;
+			children = (
+				2935A0932AE28B5500DDA81A /* BigImageView.xib */,
+				2935A0952AE28B6600DDA81A /* BigImageView.swift */,
+			);
+			path = "BıgImageView";
+			sourceTree = "<group>";
+		};
+		2935A0922AE28B4500DDA81A /* SmallImageView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SmallImageView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,6 +348,7 @@
 				2935A0452AE1E13200DDA81A /* LaunchScreen.storyboard in Resources */,
 				2935A0642AE1E59800DDA81A /* DiscoverViewController.xib in Resources */,
 				2935A0692AE1F43C00DDA81A /* GoogleService-Info.plist in Resources */,
+				2935A0942AE28B5500DDA81A /* BigImageView.xib in Resources */,
 				2935A0602AE1E58D00DDA81A /* FavoritesViewController.xib in Resources */,
 				2935A0422AE1E13200DDA81A /* Assets.xcassets in Resources */,
 			);
@@ -343,7 +361,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2935A08B2AE289A100DDA81A /* BaseTableViewCell.swift in Sources */,
+				2935A0982AE28C6200DDA81A /* MoviesManager.swift in Sources */,
 				2935A0392AE1E13200DDA81A /* AppDelegate.swift in Sources */,
 				2935A05A2AE1E55800DDA81A /* TabBarItemType.swift in Sources */,
 				2935A0632AE1E59800DDA81A /* DiscoverViewController.swift in Sources */,
@@ -355,9 +373,11 @@
 				2935A08D2AE289BB00DDA81A /* UIImageView+Ext.swift in Sources */,
 				2935A0672AE1E72600DDA81A /* UIColor+Ext.swift in Sources */,
 				2935A05F2AE1E58D00DDA81A /* FavoritesViewController.swift in Sources */,
+				2935A0962AE28B6600DDA81A /* BigImageView.swift in Sources */,
 				2935A0772AE1FA1100DDA81A /* DiscoverViewModel.swift in Sources */,
 				2935A07C2AE2866900DDA81A /* UserDefaultWrapper.swift in Sources */,
 				2935A0552AE1E50400DDA81A /* BaseViewController.swift in Sources */,
+				2935A0902AE28AF100DDA81A /* BaseView.swift in Sources */,
 				2935A0752AE1F9B400DDA81A /* Category.swift in Sources */,
 				2935A0792AE1FA1B00DDA81A /* FavoritesViewModel.swift in Sources */,
 			);

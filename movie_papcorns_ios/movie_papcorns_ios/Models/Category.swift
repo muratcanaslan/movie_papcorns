@@ -7,9 +7,28 @@
 
 import Foundation
 
-struct Category {
+struct Category: Codable {
     let id : Int
     let order: Int // sıra numarası
     let title: String
     let type: Int  // 1 ise ana sayfada büyük gösterim olmalı, 0 ise küçük gösterim
 }
+
+class CategoryViewModel {
+    let id: Int
+    let order: Int
+    let title: String
+    let type: Int
+    
+    let movies: [ContentViewModel]
+    
+    init(model: Category, movies: [ContentViewModel]) {
+        self.id = model.id
+        self.order = model.order
+        self.title = model.title
+        self.type = model.type
+        
+        self.movies = movies
+    }
+}
+
